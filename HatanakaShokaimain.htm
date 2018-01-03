@@ -1,0 +1,130 @@
+<head>
+<meta charset="utf-8">
+
+
+</head>
+
+<style>
+body{
+    background-color:rgba(161, 161, 140, 0.801)
+}
+.banner{
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(153, 153, 153);
+    border-radius: 50%;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 100px;
+    color: black;
+}
+.smallsize{
+    width: 15%;
+    padding-right: 50px;
+}
+.box{
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    float: left;
+    position:absolute;
+    width: 220px;
+    margin-bottom: 300px;
+    color: black;
+    background-color: rgb(153, 153, 153);
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+.small{
+    width: 50%;
+    float: right;
+}
+.right{
+    float: right;
+    width: 100%
+}
+.bold{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-width: 3px;
+    opacity: 100;
+  }
+  .rad{
+    border-radius: 50%; 
+    background-color: #e0e0e0;
+  }
+  .btn{
+      display: block;
+      font-size: 40px;
+  }
+  .text-center{
+      text-align: center;
+  }
+  .btn:hover{
+      box-shadow: 10px 10px 5px #888;
+  }
+  
+</style>
+
+<body>
+<div class="container-fluid">
+    <header>
+      <h1 class= "banner"><img src= "https://cdn.pixabay.com/photo/2012/04/10/17/22/red-26550_960_720.png" alt="Car Image" class= "smallsize img-responsive">ハタナカ商会 </h1>
+      <h2 style="text-align: center">"すぐに届く"</h2>
+    </header>
+</div>
+<div>
+    <aside>
+        <img src="HatanakaShokai.png" alt="Hatanaka Shokai" class= "right">
+    </aside>
+</div>
+<section>
+    <!--this is the menu-->
+    <div class="box" id="menu">
+            <div class="col-sx-6">
+                    <div class = "well">
+                    <button class="btn btn-default target rad bold" id="about"><a href="#">ハタナカ商会について</a></button>
+                    <button class="btn btn-default target rad bold" id="Contact" style="margin-top: 50px"><a href="#">Contact</a></button>
+                    <button class="btn btn-default target rad bold" id="Order" style="margin-top: 50px"><a href="#">パーツを頼む</a></button>
+                    <button class="btn btn-default target rad bold" id="Visit" style="margin-top: 50px"><a href="#">店を見に来る</a></button>
+                    </div>
+            </div>
+    </div>
+    </section>
+    <section>
+    
+    <footer>
+    <p>
+        <h3 class="text-center"><a href="#">鹿児島県志布志市志布志町志布志８８９－７　〒８９９－７１０３</a></h3>
+        <h4 class="text-center">81-99-472-8255</h4> 
+    </p>
+    <p>
+        <h4 class="text-center"><a href="https://www.google.com/maps/dir/?api=1&destination=31.489950, 131.086852">directions</a></h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d108871.73078570439!2d131.01670088080715!3d31.490042718410965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x353ec5b1cf3fbbe3%3A0x97b0534611f769a7!2z77yI5pyJ77yJ44OP44K_44OK44Kr5ZWG5LyaLCBKYXBhbiwg44CSODk5LTcxMDMgS2Fnb3NoaW1hLWtlbiwgU2hpYnVzaGktc2hpLCBTaGlidXNoaWNoxY0gU2hpYnVzaGksIDg4OeKIkjc!3m2!1d31.489915399999997!2d131.0867417!5e0!3m2!1sen!2sus!4v1513712853433" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </p>
+</footer>
+
+
+</section>
+
+<script>
+        $(document).ready(function(){
+        $("#about").appendTo("#menu");
+        $("#Contact").appendTo("#menu");
+        $("#Order").appendTo("#menu");
+        $("#Visit").appendTo("#menu");
+
+       })  
+</script>
+
+</body>
+</html>
